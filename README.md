@@ -49,3 +49,19 @@ The model learns to map words to vectors by minimizing the loss between the pred
 ### Prerequisites
 ```bash
 pip install numpy nltk matplotlib
+```
+
+---
+
+## 📊 Results & Visualization
+
+### 1. Training Progress (Cost Reduction)
+The model successfully minimizes the cross-entropy loss over iterations, demonstrating that the neural network is effectively learning the context-target word relationships.
+
+![Training Cost](./output/training_cost_several_iterations.png)
+
+### 2. Word Embeddings Visualization (PCA)
+After training, we project the high-dimensional word vectors into 2D space using Principal Component Analysis (PCA). As shown below, semantically similar words (like "king" & "queen" or "hostel" & "dorm") cluster together, proving the model has captured semantic meaning.
+
+![Word Vectors Map 1](./output/word_vectors_map_1.png)
+![Word Vectors Map 2](./output/word_vectors_map_2.png)
